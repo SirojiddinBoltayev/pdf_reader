@@ -1,6 +1,8 @@
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 
+import '../pinch.dart';
+
 class FilesPage extends StatefulWidget {
   final List<PlatformFile> files;
   final ValueChanged<PlatformFile> onOpenedFile;
@@ -41,7 +43,7 @@ class _FilesPageState extends State<FilesPage> {
     final color = Colors.redAccent;
 
     return InkWell(
-      onTap: () => widget.onOpenedFile(file),
+      onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context)=>PinchPage( files: file,))),
       child: Container(
         padding: EdgeInsets.all(8),
         child: Column(
@@ -56,7 +58,7 @@ class _FilesPageState extends State<FilesPage> {
                 ),
                 child: Text(
                   ".$extension",
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontSize: 28,
                       fontWeight: FontWeight.bold,
                       color: Colors.white),
@@ -64,7 +66,7 @@ class _FilesPageState extends State<FilesPage> {
               ),
             ),
             const SizedBox(height: 8,),
-            Text(file.name,style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),
+            Text(file.name,style: const TextStyle(fontSize: 18,fontWeight: FontWeight.bold),
             overflow: TextOverflow.ellipsis,),
             Text(fileSize,style: TextStyle(fontSize: 16),)
           ],
