@@ -5,9 +5,8 @@ import '../pinch.dart';
 
 class FilesPage extends StatefulWidget {
   final List<PlatformFile> files;
-  final ValueChanged<PlatformFile> onOpenedFile;
 
-  FilesPage({Key? key, required this.files, required this.onOpenedFile})
+  FilesPage({Key? key, required this.files, })
       : super(key: key);
 
   @override

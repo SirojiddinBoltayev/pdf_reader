@@ -24,15 +24,12 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    void openFile(PlatformFile file) {
-      OpenFile.open(file.path);
-    }
+
 
     void openFiles(List<PlatformFile> files) =>
         Navigator.of(context).push(MaterialPageRoute(
             builder: (context) => FilesPage(
                   files: files,
-                  onOpenedFile: openFile,
                 )));
 
     return Scaffold(

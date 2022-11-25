@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:pdfx/pdfx.dart';
-import 'package:universal_platform/universal_platform.dart';
 import 'package:file_picker/file_picker.dart';
 
 
@@ -17,7 +16,6 @@ enum DocShown { sample, tutorial, hello, password }
 
 class _PinchPageState extends State<PinchPage> {
   static const int _initialPage = 1;
-  DocShown _showing = DocShown.sample;
   late PdfControllerPinch _pdfControllerPinch;
 
   @override
