@@ -1,16 +1,6 @@
 # pdf_reader
 
-A new Flutter project.
+![Screenshot_1673884269](https://user-images.githubusercontent.com/79628694/212727779-a9473f97-089c-40d4-8183-90a7d79776f7.png)
+![Screenshot_1673884295](https://user-images.githubusercontent.com/79628694/212727787-365b7cb9-a10d-42e9-8eb9-06927a1ce56f.png)
+![Screenshot_1673883988](https://user-images.githubusercontent.com/79628694/212727790-9b186a09-a698-48ec-9133-9361da15bafc.png)
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
